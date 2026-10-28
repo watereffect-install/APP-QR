@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>앱 다운로드</title>
+<script>
+var IOS = "https://apps.apple.com/kr/app/%EC%9B%8C%ED%84%B0%EC%9D%B4%ED%8E%99%ED%8A%B8-%EB%8F%99%EB%84%A4%EA%B0%80%EA%B2%8C-%EA%B5%AC%EA%B2%BD%ED%95%98%EA%B3%A0-%EB%AC%B4%EB%A3%8C-%EC%83%9D%EC%88%98-%EB%B0%9B%EA%B8%B0/id6752742822";
+var AND = "https://play.google.com/store/apps/details?id=com.water.watereffect_aos&hl=ko";
+var ua = navigator.userAgent || "";
+var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+if (isIOS) location.replace(IOS);
+else if (/Android/i.test(ua)) location.replace(AND);
+</script>
+<style>
+body{font-family:sans-serif;text-align:center;padding:60px 16px}
+a{display:block;max-width:280px;margin:12px auto;padding:14px;border-radius:10px;background:#111;color:#fff;text-decoration:none}
+</style>
+</head>
+<body>
+<h2>앱 다운로드</h2>
+<a href="https://apps.apple.com/kr/app/%EC%9B%8C%ED%84%B0%EC%9D%B4%ED%8E%99%ED%8A%B8-%EB%8F%99%EB%84%A4%EA%B0%80%EA%B2%8C-%EA%B5%AC%EA%B2%BD%ED%95%98%EA%B3%A0-%EB%AC%B4%EB%A3%8C-%EC%83%9D%EC%88%98-%EB%B0%9B%EA%B8%B0/id6752742822">App Store</a>
+<a href="https://play.google.com/store/apps/details?id=com.water.watereffect_aos&hl=ko">Google Play</a>
+</body>
+</html>
